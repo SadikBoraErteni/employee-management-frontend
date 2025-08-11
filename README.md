@@ -1,12 +1,40 @@
-# React + Vite
+# Çalışan Yönetimi Ön Yüz Uygulaması (React Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, Çalışan Yönetimi API'si ile iletişim kuran ve verileri kullanıcıya görsel bir arayüzde sunan bir React uygulamasıdır.
 
-Currently, two official plugins are available:
+## Özellikler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Çalışan Listesi:** API'den gelen çalışan verilerini bir tablo halinde gösterir.
+- **Çalışan Ekleme Formu:** Yeni çalışan eklemek için bir form sağlar.
+- **Çalışan Silme:** Her çalışanın yanındaki bir buton ile çalışanları silme işlevi.
 
-## Expanding the ESLint configuration
+## Teknolojiler
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React
+- **Build Aracı:** Vite
+- **API Entegrasyonu:** `fetch` API
+
+## Gereksinimler
+
+- Node.js ve npm
+
+## Başlangıç
+
+1.  **Projeyi Klonla:**
+    ```bash
+    git clone [https://github.com/SENIN_GITHUB_ADIN/employee-frontend.git](https://github.com/SENIN_GITHUB_ADIN/employee-frontend.git)
+    cd employee-frontend
+    ```
+
+2.  **Bağımlılıkları Yükle:**
+    ```bash
+    npm install
+    ```
+
+3.  **Uygulamayı Çalıştır:**
+    ```bash
+    npm run dev
+    ```
+    Uygulama, `http://localhost:5173` adresinde çalışmaya başlayacaktır.
+
+**NOT:** Bu uygulamanın doğru çalışması için, arka uç API'sinin (`calisan-yonetim-web` projesi) `http://localhost:8080` adresinde çalışıyor olması gerekir.
